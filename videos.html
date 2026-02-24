@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دسته‌بندی گزارش مراسم ها|  هیئت فاطمیون</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Tahoma,sans-serif;
+  color:white;
+  direction:rtl;
+  text-align:center;
+
+  /* پس‌زمینه پرچم */
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("flag.jpg");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+h1{
+  color:#e60000;
+  margin-top:40px;
+}
+
+section{
+  padding:40px 20px;
+}
+
+.category-boxes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:15px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.cat-box{
+  background:rgba(0,0,0,0.6);
+  border:1px solid #222;
+  border-radius:12px;
+  padding:30px 10px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.cat-box:hover{
+  background:rgba(230,0,0,0.25);
+  transform:translateY(-5px);
+}
+
+.cat-box span{
+  font-size:34px;
+  display:block;
+  margin-bottom:10px;
+}
+
+.cat-box h3{
+  margin:0;
+  color:#e60000;
+}
+</style>
+</head>
+
+<body>
+
+<h1>دسته‌بندی گزارش مراسم ها</h1>
+
+<section>
+  <div class="category-boxes">
+
+    <a href="ramazan.html" class="cat-box">
+      <span>🌙</span>
+      <h3>رمضان</h3>
+    </a>
+
+    <a href="shahadat.html" class="cat-box">
+      <span>🖤</span>
+      <h3>شهادت</h3>
+    </a>
+
+    <a href="jashn.html" class="cat-box">
+      <span>🎉</span>
+      <h3>جشن</h3>
+    </a>
+
+  </div>
+</section>
+
+</body>
+</html>

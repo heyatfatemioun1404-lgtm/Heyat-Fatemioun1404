@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>هیئت فاطمیون محله وازیچه</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Tahoma, sans-serif;
+    background:black;
+    color:white;
+    text-align:center;
+    direction: rtl;
+    .donation-box{
+  background:#111;
+  max-width:400px;
+  margin:20px auto;
+  padding:20px;
+  border-radius:10px;
+  border:1px solid #222;
+}
+
+.card-number{
+  font-size:18px;
+  margin:15px 0;
+  color:#fff;
+  letter-spacing:1px;
+}
+
+.card-owner{
+  color:#ccc;
+}
+
+.dua{
+  margin-top:15px;
+  color:#e60000;
+}
+}
+
+header{
+    padding:40px 20px;
+}
+
+header img{
+    max-width:280px;
+    width:80%;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#e60000;
+    font-size:26px;
+}
+
+section{
+    padding:30px 20px;
+    border-top:1px solid #222;
+}
+
+h2{
+    color:#e60000;
+    margin-bottom:15px;
+}
+
+.program{
+    background:#111;
+    padding:15px;
+    margin:10px auto;
+    max-width:400px;
+    border-radius:8px;
+}
+
+footer{
+    padding:20px;
+    font-size:14px;
+    color:#aaa;
+    border-top:1px solid #222;
+}
+
+/* ===== منو ===== */
+.menu-icon{
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  color: #e60000;
+}
+
+#sideMenu{
+  position: fixed;
+  top: 0;
+  right: -220px;
+  width: 200px;
+  height: 100%;
+  background: #111;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+#sideMenu a{
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+}
+
+#sideMenu a:hover{
+  background: #222;
+}
+</style>
+</head>
+
+<body>
+
+<!-- آیکن منو -->
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<!-- منوی کناری -->
+<nav id="sideMenu">
+  <a href="#home" onclick="toggleMenu()">صفحه اصلی</a>
+  <a href="#about" onclick="toggleMenu()">درباره هیئت</a>
+  <a href="#video" onclick="toggleMenu()">فیلم‌ها</a>
+  <a href="#gallery" onclick="toggleMenu()">تصاویر</a>
+</nav>
+
+<header id="home">
+    <img src="logo.jpg" alt="لوگوی هیئت فاطمیون">
+    <h1>هیئت فاطمیون محله وازیچه</h1>
+    <p>یا فاطمه الزهرا (س)</p>
+</header>
+
+<section id="about">
+    <h2>درباره هیئت</h2>
+    <p>
+        هیئت فاطمیون محله وازیچه با هدف ترویج فرهنگ اهل‌بیت (ع)
+        و برگزاری مراسم مذهبی فعالیت می‌کند.
+    </p>
+</section>
+<section id="donation">
+  <h2>واریز نذورات</h2>
+
+  <div class="donation-box">
+    <p>جهت واریز نذورات و کمک‌های مردمی:</p>
+
+    <p class="card-number">
+      💳 شماره کارت:<br>
+      <strong>6037 - 9973 - 4348 - 6529</strong>
+    </p>
+
+    <p class="card-owner">
+      به نام: <strong>محسن اکبری<strong>
+    </p>
+
+    <p class="dua">
+      🌹 اجرکم عندالله 🌹
+    </p>
+  </div>
+</section>
+
+<section id="video">
+  <h2>فیلم مراسم جزء خوانی رمضان ۱۴۰۴</h2>
+  <video width="80%" controls>
+    <source src="ceremony.mp4" type="video/mp4">
+    مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+  </video>
+</section>
+
+<footer>
+    © هیئت فاطمیون محله وازیچه
+</footer>
+
+<script>
+function toggleMenu(){
+  let menu = document.getElementById("sideMenu");
+  if(menu.style.right === "0px"){
+    menu.style.right = "-220px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
+
+</body>
+</html>
